@@ -1,14 +1,18 @@
-'use client'
 import React from 'react'
 import SlickSlider from '@/components/portfolio/Slider'
 import Testimonial from '@/components/SharedComponent/Testimonial'
 import PortfolioDetail from '@/components/portfolio/PortfolioDetail'
 import Portfolio from '@/components/SharedComponent/portfollio'
 import { portfolioinfo } from '@/app/api/data'
-import { useParams } from 'next/navigation'
 
-const Portfolios = () => {
-  const { slug } = useParams()
+export async function generateStaticParams() {
+  return portfolioinfo.map((item) => ({
+    slug: item.slug,
+  }));
+}
+
+const Portfolios = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await params
 
   // Find the blog post by slug
   const item = portfolioinfo.find((item) => item.slug === slug)

@@ -1,14 +1,21 @@
-"use client";
 import React from "react";
-import { useParams } from "next/navigation";
 import { Servicebox } from "@/app/api/data";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 import Image from "next/image";
 
-const ServiceDetail = () => {
-  const params = useParams();
-  const slug = params.slug;
+export async function generateStaticParams() {
+  return Servicebox.map((service) => ({
+    slug: service.slug,
+  }));
+}
+
+const ServiceDetail = async ({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) => {
+  const { slug } = await params;
 
   const service = Servicebox.find((s) => s.slug === slug);
 
