@@ -7,21 +7,23 @@ import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 
+export async function generateStaticParams() {
+  const posts = getAllPosts(["slug"]);
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
-export async function generateMetadata({ params }: any) {
-  const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
-  const post = getPostBySlug(params.slug, [
-    "title",
-    "author",
-    "content",
-    "metadata",
-  ]);
+export async function generateMetadata({ params }: Props) {
+  const { slug } = await params;
+  const post = getPostBySlug(slug, ["title", "author", "content", "metadata"]);
 
-  const siteName = process.env.SITE_NAME || "Your Site Name";
-  const authorName = process.env.AUTHOR_NAME || "Your Author Name";
+  const siteName = process.env.SITE_NAME || "Novaroxe";
+  const authorName = process.env.AUTHOR_NAME || "Novaroxe Team";
 
   if (post) {
     const metadata = {
@@ -63,9 +65,9 @@ export async function generateMetadata({ params }: any) {
   }
 }
 
-export default async function Post({ params }: any) {
-  const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
-  const post = getPostBySlug(params.slug, [
+export default async function Post({ params }: Props) {
+  const { slug } = await params;
+  const post = getPostBySlug(slug, [
     "title",
     "author",
     "authorImage",
@@ -73,6 +75,8 @@ export default async function Post({ params }: any) {
     "coverImage",
     "date",
   ]);
+
+  if (!post) return <div>Post not found</div>;
 
   const content = await markdownToHtml(post.content || "");
 
