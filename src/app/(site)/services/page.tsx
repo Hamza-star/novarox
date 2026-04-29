@@ -7,7 +7,7 @@ import Services from "@/components/Home/Services";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Explore Novaroxe's wide range of digital marketing services, from social media advertising to web design and funnel optimization.",
+    "Explore novarox's wide range of digital marketing services, from social media advertising to web design and funnel optimization.",
 };
 
 const page = () => {

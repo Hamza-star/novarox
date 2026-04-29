@@ -197,7 +197,7 @@ const Footer: FC = () => {
                   </svg>
                 </div>
                 <Link
-                  href="mailto:contact@novaroxe.com"
+                  href="mailto:contact@novarox.com"
                   className="text-white/50 hover:text-white transition-colors"
                 >
                   Sikandar.info5@gmail.com
@@ -246,7 +246,7 @@ const Footer: FC = () => {
         <div className="container mx-auto max-w-6xl px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-base text-white/50 text-center md:text-start">
-              © {new Date().getFullYear()} Novaroxe. All rights reserved.
+              © {new Date().getFullYear()} novarox. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               <Link

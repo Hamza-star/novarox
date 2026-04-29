@@ -9,7 +9,7 @@ import Testimonial from "@/components/SharedComponent/Testimonial";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about Novaroxe, our mission, and how we help businesses scale with data-driven digital marketing strategies.",
+    "Learn about novarox, our mission, and how we help businesses scale with data-driven digital marketing strategies.",
 };
 
 const page = () => {
@@ -20,7 +20,7 @@ const page = () => {
   return (
     <>
       <HeroSub
-        title="About Novaroxe"
+        title="About novarox"
         description="We are a team of digital marketing experts dedicated to scaling businesses through innovative ad strategies, user-centric design, and data-driven insights."
         breadcrumbLinks={breadcrumbLinks}
       />

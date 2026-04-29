@@ -53,7 +53,7 @@ const Progresswork = ({ isColorMode }: { isColorMode: Boolean }) => {
               Driving Growth through Data-Driven Digital Strategies
             </h2>
             <p className='text-gray dark:text-white/70 text-base font-semibold'>
-              At Novaroxe, we combine creative storytelling with technical precision. Our team specializes in scaling brands through targeted advertising, conversion-focused design, and comprehensive market research.
+              At novarox, we combine creative storytelling with technical precision. Our team specializes in scaling brands through targeted advertising, conversion-focused design, and comprehensive market research.
             </p>
 
             <div className='block mx-auto pt-12'>

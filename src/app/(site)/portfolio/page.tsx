@@ -5,7 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Portfolio",
   description:
-    "Check out our successful marketing campaigns and high-converting designs in the Novaroxe portfolio.",
+    "Check out our successful marketing campaigns and high-converting designs in the novarox portfolio.",
 };
 
 const PortfolioList = () => {

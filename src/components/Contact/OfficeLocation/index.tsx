@@ -51,7 +51,7 @@ const Location = () => {
               </div>
               <div className="col-span-3">
                 <Link
-                  href="mailto:contact@novaroxe.com"
+                  href="mailto:contact@novarox.com"
                   className="sm:text-2xl text-xl text-white font-medium underline"
                 >
                   Sikandar.info5@gmail.com

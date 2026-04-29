@@ -18,7 +18,7 @@ const Testimonial = () => {
           />
           <div className='pt-16 pb-28'>
             <p className='font-medium md:text-xl text-base text-midnight_text dark:text-white text-center max-w-3xl mx-auto'>
-              "Novaroxe transformed our digital presence. Their Meta and Google Ads strategies delivered a 4x return on our ad spend within the first three months. Their data-driven approach is truly game-changing."
+              "novarox transformed our digital presence. Their Meta and Google Ads strategies delivered a 4x return on our ad spend within the first three months. Their data-driven approach is truly game-changing."
             </p>
           </div>
           <div className='text-center'>

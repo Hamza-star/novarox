@@ -12,22 +12,22 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Novaroxe | Strategic Digital Marketing Agency",
-    template: "%s | Novaroxe",
+    default: "novarox | Strategic Digital Marketing Agency",
+    template: "%s | novarox",
   },
   description:
-    "Novaroxe provides high-ROI digital solutions including Meta Ads, Google Ads, UI/UX design, and conversion-focused funnels.",
+    "novarox provides high-ROI digital solutions including Meta Ads, Google Ads, UI/UX design, and conversion-focused funnels.",
   keywords: [
     "Digital Marketing",
     "Meta Ads",
     "Google Ads",
     "UI/UX Design",
     "Email Marketing",
-    "Novaroxe",
+    "novarox",
   ],
-  authors: [{ name: "Novaroxe Team" }],
-  creator: "Novaroxe",
-  publisher: "Novaroxe",
+  authors: [{ name: "novarox Team" }],
+  creator: "novarox",
+  publisher: "novarox",
   robots: "index, follow",
 };
 

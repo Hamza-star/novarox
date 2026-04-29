@@ -11,7 +11,7 @@ import FAQ from "@/components/Home/FAQ";
 import Newsletter from "@/components/Layout/Newsletter";
 import Contactform from "@/components/Home/Contact";
 export const metadata: Metadata = {
-  title: "Novaroxe | Strategic Digital Marketing Agency",
+  title: "novarox | Strategic Digital Marketing Agency",
 };
 
 export default function Home() {

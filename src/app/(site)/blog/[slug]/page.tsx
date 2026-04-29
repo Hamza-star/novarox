@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const post = getPostBySlug(slug, ["title", "author", "content", "metadata"]);
 
-  const siteName = process.env.SITE_NAME || "Novaroxe";
-  const authorName = process.env.AUTHOR_NAME || "Novaroxe Team";
+  const siteName = process.env.SITE_NAME || "novarox";
+  const authorName = process.env.AUTHOR_NAME || "novarox Team";
 
   if (post) {
     const metadata = {

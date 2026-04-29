@@ -7,7 +7,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Novaroxe to discuss your next big project and take your business to the next level.",
+    "Get in touch with novarox to discuss your next big project and take your business to the next level.",
 };
 
 const page = () => {
@@ -19,7 +19,7 @@ const page = () => {
     <>
       <HeroSub
         title="Contact Us"
-        description="Ready to scale your brand? Let's talk about your marketing goals and how Novaroxe can help you achieve them."
+        description="Ready to scale your brand? Let's talk about your marketing goals and how novarox can help you achieve them."
         breadcrumbLinks={breadcrumbLinks}
       />
       <ContactInfo />

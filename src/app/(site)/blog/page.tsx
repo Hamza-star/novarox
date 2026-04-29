@@ -7,7 +7,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Stay updated with the latest trends and insights in digital marketing from the Novaroxe team.",
+    "Stay updated with the latest trends and insights in digital marketing from the novarox team.",
 };
 
 const BlogPage = () => {
