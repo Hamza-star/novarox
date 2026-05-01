@@ -7,7 +7,7 @@ const Logo: React.FC = () => {
         <span className="text-white font-bold text-xl">N</span>
       </div> */}
       <span className="text-2xl font-bold text-midnight_text dark:text-white">
-        Nova<span className="text-blue-600">rox</span>
+        Nova<span className="text-primary">rox</span>
       </span>
     </Link>
   );

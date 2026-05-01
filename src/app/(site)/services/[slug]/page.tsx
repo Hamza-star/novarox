@@ -31,110 +31,97 @@ const ServiceDetail = async ({
   }
 
   return (
-    <div className="bg-white dark:bg-darkmode py-24 md:py-32">
-      <div className="container mx-auto max-w-4xl px-4">
-        <div className="flex items-center gap-4 mb-8">
+    <div className="bg-black py-24 md:py-40 relative overflow-hidden min-h-screen">
+      {/* Background Blobs */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <div className="glow-blob top-[-10%] left-[-10%] w-[50%] h-[50%] bg-indigo-600/20"></div>
+        <div
+          className="glow-blob bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-purple-600/20"
+          style={{ animationDelay: "2s" }}
+        ></div>
+      </div>
+
+      <div className="container mx-auto max-w-5xl px-4 relative z-10">
+        <div className="flex items-center gap-4 mb-12">
           <Link
             href="/services"
-            className="flex items-center gap-2 text-gray-500 hover:text-primary transition-colors"
+            className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors group font-bold uppercase tracking-widest text-xs"
           >
-            <Icon icon="solar:arrow-left-outline" width="20" height="20" />
+            <Icon
+              icon="mdi:arrow-left"
+              width="16"
+              height="16"
+              className="group-hover:-translate-x-1 transition-transform"
+            />
             Back to Services
           </Link>
         </div>
 
-        <div className="bg-section dark:bg-darklight rounded-2xl p-8 md:p-12 shadow-sm">
-          <div className="flex flex-col md:flex-row items-center gap-8 mb-10">
-            <div className="bg-white dark:bg-darkmode overflow-hidden rounded-2xl shadow-sm w-full md:w-1/3">
+        <div className="glass-card p-8 md:p-16 space-y-16">
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="relative aspect-[16/10] w-full md:w-1/2 rounded-3xl overflow-hidden border border-white/10 group">
               <Image
                 src={service.image}
                 alt={service.title}
-                width={400}
-                height={250}
-                className="w-full h-auto object-cover"
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-1000"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60"></div>
             </div>
-            <div className="text-center md:text-left flex-1">
-              <h1 className="text-4xl md:text-5xl font-bold text-midnight_text dark:text-white mb-4">
+
+            <div className="text-left flex-1 space-y-6">
+              <h1 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tight uppercase">
                 {service.title}
               </h1>
-              <div className="h-1 w-20 bg-primary mx-auto md:mx-0"></div>
+              <div className="h-1.5 w-24 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"></div>
+              <p className="text-xl text-gray-400 font-medium leading-relaxed italic">
+                {service.description}
+              </p>
             </div>
           </div>
 
-          <div className="prose prose-lg dark:prose-invert max-w-none">
-            <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-              {service.description}
-            </p>
+          <div className="grid md:grid-cols-2 gap-12 pt-12 border-t border-white/5">
+            <div className="space-y-8">
+              <h3 className="text-2xl font-black text-white uppercase tracking-tight">
+                Our Strategic Approach
+              </h3>
+              <ul className="space-y-6">
+                {[
+                  "Data-driven strategies tailored to your specific business goals and audience.",
+                  "Continuous optimization and A/B testing to ensure maximum ROI on every dollar spent.",
+                  "Transparent reporting and regular performance updates to keep you in the loop.",
+                  "Expert team with years of experience in digital growth and scalability.",
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-4 items-start group">
+                    <div className="w-6 h-6 rounded-full bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center shrink-0 mt-1 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                      <Icon icon="mdi:check-circle" width="14" />
+                    </div>
+                    <span className="text-gray-400 font-medium leading-relaxed group-hover:text-gray-300 transition-colors">
+                      {item}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-            <h3 className="text-2xl font-bold mb-4 dark:text-white">
-              Why Choose Our {service.title}?
-            </h3>
-            <ul className="space-y-4">
-              <li className="flex gap-3 items-start">
-                <Icon
-                  icon="solar:check-circle-bold"
-                  className="text-success mt-1 shrink-0"
-                  width="24"
-                  height="24"
-                />
-                <span className="text-gray-700 dark:text-gray-400">
-                  Data-driven strategies tailored to your specific business
-                  goals and audience.
-                </span>
-              </li>
-              <li className="flex gap-3 items-start">
-                <Icon
-                  icon="solar:check-circle-bold"
-                  className="text-success mt-1 shrink-0"
-                  width="24"
-                  height="24"
-                />
-                <span className="text-gray-700 dark:text-gray-400">
-                  Continuous optimization and A/B testing to ensure maximum ROI
-                  on every dollar spent.
-                </span>
-              </li>
-              <li className="flex gap-3 items-start">
-                <Icon
-                  icon="solar:check-circle-bold"
-                  className="text-success mt-1 shrink-0"
-                  width="24"
-                  height="24"
-                />
-                <span className="text-gray-700 dark:text-gray-400">
-                  Transparent reporting and regular performance updates to keep
-                  you in the loop.
-                </span>
-              </li>
-              <li className="flex gap-3 items-start">
-                <Icon
-                  icon="solar:check-circle-bold"
-                  className="text-success mt-1 shrink-0"
-                  width="24"
-                  height="24"
-                />
-                <span className="text-gray-700 dark:text-gray-400">
-                  Expert team with years of experience in {service.title} and
-                  digital growth.
-                </span>
-              </li>
-            </ul>
-
-            <div className="mt-12 p-8 bg-white dark:bg-darkmode rounded-xl border border-gray-100 dark:border-gray-800 flex flex-col md:flex-row items-center justify-between gap-6">
-              <div>
-                <h4 className="text-xl font-bold dark:text-white mb-2">
-                  Ready to scale your business?
+            <div className="glass-card p-10 bg-white/5 border-white/10 flex flex-col items-center text-center justify-center space-y-8">
+              <div className="w-20 h-20 rounded-3xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
+                <Icon icon="mdi:star-face" width="40" />
+              </div>
+              <div className="space-y-3">
+                <h4 className="text-2xl font-black text-white uppercase">
+                  Ready to Scale?
                 </h4>
-                <p className="text-gray-500">
-                  Contact our experts today for a free consultation.
+                <p className="text-gray-400 font-medium">
+                  Partner with Novaroxe and experience the future of digital
+                  marketing.
                 </p>
               </div>
               <Link
                 href="/contact"
-                className="bg-primary hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-bold transition-all shadow-lg hover:shadow-primary/30"
+                className="w-full py-5 bg-white text-black rounded-2xl font-black text-lg hover:scale-105 active:scale-95 transition-all shadow-[0_0_50px_rgba(255,255,255,0.2)]"
               >
-                Get a Quote
+                Get Started Now
               </Link>
             </div>
           </div>

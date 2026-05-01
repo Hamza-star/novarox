@@ -14,12 +14,12 @@ const Location = () => {
             <div className="grid md:grid-cols-6 lg:grid-cols-9 grid-cols-1 gap-7 border-b border-solid border-white border-opacity-50 pb-11">
               <div className="col-span-3">
                 <h2 className="text-white max-w-56 text-[40px] leading-tight font-bold">
-                  Pune Head Office
+                  Lahore Head Office
                 </h2>
               </div>
               <div className="col-span-3">
                 <p className="sm:text-2xl text-xl text-IceBlue font-normal max-w-64 leading-7 text-white/50">
-                  4292 Mapleview Drive Greenfield Zip code 38230
+                  Gulnishan Society, Lahore, Pakistan
                 </p>
               </div>
               <div className="col-span-3">
@@ -41,12 +41,12 @@ const Location = () => {
             <div className="grid md:grid-cols-6 lg:grid-cols-9 grid-cols-1 gap-7 pt-12">
               <div className="col-span-3">
                 <h2 className="text-white max-w-52 text-[40px] leading-tight font-bold">
-                  Bengaluru Office
+                  Digital Branch
                 </h2>
               </div>
               <div className="col-span-3">
                 <p className="sm:text-2xl text-xl text-white/50 font-normal max-w-64 leading-7">
-                  3502 Marcus Street Geraldine Zip code 35974
+                  Serving Clients Globally from Lahore
                 </p>
               </div>
               <div className="col-span-3">

@@ -1,35 +1,26 @@
 import React from 'react'
 import { count } from '@/app/api/data'
-import Image from 'next/image'
+import { Icon } from '@iconify/react'
 
 const Counter = ({ isColorMode }: { isColorMode: Boolean }) => {
   return (
-    <section
-      className={` ${
-        isColorMode
-          ? 'dark:bg-darklight bg-section'
-          : 'dark:bg-darkmode bg-white'
-      }`}>
-      <div className='container mx-auto max-w-6xl px-4'>
-        <div className='flex flex-wrap items-center md:justify-between justify-center md:gap-0 gap-9'>
+    <section className="bg-black py-20">
+      <div className='container mx-auto max-w-7xl px-4'>
+        <div className='glass-card p-12 flex flex-wrap items-center md:justify-between justify-center md:gap-0 gap-12'>
           {count.map((item, index) => (
             <div
               key={index}
-              className='flex flex-col items-center gap-[0.875rem]'
+              className='flex flex-col items-center gap-4 text-center'
               data-aos='fade-up'
-              data-aos-delay={`${index * 200}`}
-              data-aos-duration='1000'>
-              <Image
-                src={item.icon}
-                alt='icon'
-                width={30}
-                height={30}
-                unoptimized
-              />
-              <span className='text-5xl font-semibold text-midnight_text dark:text-white'>
+              data-aos-delay={`${index * 100}`}
+            >
+              <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-2 border border-primary/20">
+                <Icon icon={item.icon} width="28" />
+              </div>
+              <span className='text-5xl md:text-6xl font-black text-white tracking-tighter'>
                 {item.value}
               </span>
-              <p className='text-base text-grey text-center max-w-[17.8125rem] w-full dark:text-white/50'>
+              <p className='text-sm font-bold text-gray-500 uppercase tracking-widest'>
                 {item.description}
               </p>
             </div>

@@ -9,19 +9,24 @@ export const menuItems = [
 
 export const count = [
   {
-    icon: "/images/counter/star.svg",
-    value: "500+",
-    description: "Campaigns launched across Meta & Google platforms",
+    icon: "mdi:chart-bar",
+    value: "99%",
+    description: "Success Rate",
   },
   {
-    icon: "/images/counter/admin.svg",
-    value: "98%",
-    description: "Client satisfaction rate with our strategies",
+    icon: "mdi:account-group",
+    value: "150+",
+    description: "Active Clients",
   },
   {
-    icon: "/images/counter/bag.svg",
-    value: "12M+",
-    description: "Revenue generated through optimized marketing",
+    icon: "mdi:cash-multiple",
+    value: "$10M+",
+    description: "Ads Managed",
+  },
+  {
+    icon: "mdi:medal",
+    value: "40+",
+    description: "Team Experts",
   },
 ];
 
@@ -33,80 +38,141 @@ export const Progress = [
 
 export const Servicebox = [
   {
-    image: "/images/services/meta-ads.jpg",
-    title: "Meta Ads",
+    image:
+      "https://images.pexels.com/photos/17614479/pexels-photo-17614479.jpeg",
+    title: "Meta Ads (Facebook & Instagram)",
     slug: "meta-ads",
     description:
-      "High-ROI social media advertising with precise audience targeting, lookalike modeling, and daily performance optimization.",
+      "High-ROI social media advertising focused on precision targeting and daily optimization.",
+    features: [
+      "Audience targeting & lookalike modeling",
+      "Ad creative strategy & A/B testing",
+      "Daily performance optimization",
+    ],
   },
   {
-    image: "/images/services/google-ads.jpg",
-    title: "Google Ads",
+    image:
+      "https://images.unsplash.com/photo-1654277041042-8927699fcfd2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z29vZ2xlJTIwYWRzfGVufDB8fDB8fHww",
+    title: "Google Ads (Search, Display & YouTube)",
     slug: "google-ads",
     description:
-      "Capture intent-based traffic through strategic keyword research, remarketing, and Quality score improvement.",
+      "Capture intent-based traffic and maximize your reach with strategic search and display campaigns.",
+    features: [
+      "Keyword research & negative keywords",
+      "Remarketing & audience segmentation",
+      "Quality score improvement",
+    ],
   },
   {
-    image: "/images/services/ui-ux.jpg",
-    title: "UI/UX Design",
+    image:
+      "https://images.unsplash.com/photo-1586717799252-bd134ad00e26?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dWklMjB1eCUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D",
+    title: "UI/UX Design (Web & Mobile)",
     slug: "ui-ux-design",
     description:
-      "User-first, conversion-focused designs with wireframing, prototyping, mobile-responsive interfaces, and usability testing.",
+      "User-first, conversion-focused designs that provide seamless digital experiences.",
+    features: [
+      "Wireframing & prototyping",
+      "Mobile-responsive interfaces",
+      "User flow & usability testing",
+    ],
   },
   {
-    image: "/images/services/graphic-design.jpg",
-    title: "Graphic Design",
+    image:
+      "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3JhcGhpYyUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D",
+    title: "Graphic Designing",
     slug: "graphic-design",
     description:
-      "Visual storytelling for brands including social media graphics, brand identity, logos, and print & digital ad creatives.",
+      "Visual storytelling for brands that want to stand out and communicate effectively.",
+    features: [
+      "Social media graphics",
+      "Brand identity & logos",
+      "Print & digital ad creatives",
+    ],
   },
   {
-    image: "/images/services/email-marketing.jpg",
+    image:
+      "https://plus.unsplash.com/premium_photo-1684179641331-e89c6320b6a9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZW1haWwlMjBtYXJrZXRpbmd8ZW58MHx8MHx8fDA%3D",
     title: "Email Marketing",
     slug: "email-marketing",
     description:
-      "Nurture leads & drive sales with automated drip campaigns, newsletter design, copy, and CTR optimization.",
+      "Nurture leads and drive sales with automated and personalized email campaigns.",
+    features: [
+      "Automated drip campaigns",
+      "Newsletter design & copy",
+      "Open rate & CTR optimization",
+    ],
   },
   {
-    image: "/images/services/portfolio.jpg",
-    title: "Portfolio Website",
+    image:
+      "https://images.pexels.com/photos/16129700/pexels-photo-16129700.jpeg",
+    title: "Creative Portfolio Website",
     slug: "portfolio-website",
     description:
-      "Custom portfolio design with case study layout, writing, and SEO-friendly structure to showcase your work professionally.",
+      "Your work, presented professionally with a focus on conversion and SEO.",
+    features: [
+      "Custom portfolio design",
+      "Case study layout & writing",
+      "SEO-friendly structure",
+    ],
   },
   {
-    image: "/images/services/social-media.jpg",
+    image:
+      "https://images.unsplash.com/photo-1656164630621-8974e3a7e85c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c29jaWFsJTIwbWVkaWElMjBtYW5hZ2VtZW50fGVufDB8fDB8fHww",
     title: "Social Media Management",
     slug: "social-media-management",
     description:
-      "Grow & engage your community with content calendar, scheduling, hashtag strategy, and engagement management.",
+      "Grow and engage your community with a consistent and strategic social presence.",
+    features: [
+      "Content calendar & scheduling",
+      "Hashtag & trend strategy",
+      "Engagement & inbox management",
+    ],
   },
   {
-    image: "/images/services/analytics.jpg",
-    title: "Analytics & Tracking",
+    image:
+      "https://plus.unsplash.com/premium_photo-1683980578016-a1f980719ec2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8QW5hbHl0aWNzJTIwJTI2JTIwQ29udmVyc2lvbiUyMFRyYWNraW5nfGVufDB8fDB8fHww",
+    title: "Analytics & Conversion Tracking",
     slug: "analytics-tracking",
     description:
-      "Data-driven decisions with Google Tag Manager setup, pixel & event tracking, and monthly ROI reporting.",
+      "Data-driven decision making with comprehensive tracking and reporting.",
+    features: [
+      "Google Tag Manager setup",
+      "Pixel & event tracking",
+      "Monthly ROI reporting",
+    ],
   },
   {
-    image: "/images/services/funnel.jpg",
-    title: "Funnel Optimization",
+    image:
+      "https://plus.unsplash.com/premium_photo-1683402693577-035defb30159?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8RnVubmVsJTIwJTI2JTIwTGFuZGluZyUyMFBhZ2UlMjBPcHRpbWl6YXRpb258ZW58MHx8MHx8fDA%3D",
+    title: "Funnel & Landing Page Optimization",
     slug: "funnel-optimization",
     description:
-      "Turn clicks into customers with high-converting landing pages, A/B testing on forms & CTAs, and lead magnet integration.",
+      "Turn clicks into customers with high-converting landing pages and optimized funnels.",
+    features: [
+      "High-converting landing page design",
+      "A/B testing on forms & CTAs",
+      "Lead magnet integration",
+    ],
   },
   {
-    image: "/images/services/market-research.jpg",
-    title: "Market Research",
+    image:
+      "https://plus.unsplash.com/premium_photo-1661315406324-329dd27ebc34?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Q29tcGV0aXRvciUyMCUyNiUyME1hcmtldCUyMFJlc2VhcmNofGVufDB8fDB8fHww",
+    title: "Competitor & Market Research",
     slug: "market-research",
     description:
-      "Outsmart competition with ad spy, keyword gap analysis, social media benchmarking, and industry trend reports.",
+      "Outsmart the competition with deep market insights and competitive analysis.",
+    features: [
+      "Ad spy & keyword gap analysis",
+      "Social media benchmarking",
+      "Industry trend reports",
+    ],
   },
 ];
 
 export const portfolioinfo = [
   {
-    image: "/images/portfolio/cozycasa.png",
+    image:
+      "https://flair.ai/cdn-cgi/imagedelivery/i1XPW6iC_chU01_6tBPo8Q/4468f2ee-a19e-4755-404d-f396b05db800/public",
     alt: "Portfolio",
     title: "Cozycasa",
     slug: "Cozycasa",
@@ -114,7 +180,8 @@ export const portfolioinfo = [
     Class: "md:mt-0",
   },
   {
-    image: "/images/portfolio/mars.png",
+    image:
+      "https://flair.ai/cdn-cgi/imagedelivery/i1XPW6iC_chU01_6tBPo8Q/0666c16d-48c6-49b1-2813-12503afc7200/public",
     alt: "Portfolio",
     title: "Mars",
     slug: "Mars",
@@ -122,7 +189,8 @@ export const portfolioinfo = [
     Class: "md:mt-24",
   },
   {
-    image: "/images/portfolio/humans.png",
+    image:
+      "https://flair.ai/cdn-cgi/imagedelivery/i1XPW6iC_chU01_6tBPo8Q/0bab29e1-ca6f-4522-891b-6669e13c6500/public",
     alt: "Portfolio",
     title: "Everyday Humans",
     slug: "everyday-humans",
@@ -130,7 +198,8 @@ export const portfolioinfo = [
     Class: "md:mt-0",
   },
   {
-    image: "/images/portfolio/roket-squred.png",
+    image:
+      "https://flair.ai/cdn-cgi/imagedelivery/i1XPW6iC_chU01_6tBPo8Q/b56616d8-9bc0-4c5a-d14d-627da3e2a300/public",
     alt: "Portfolio",
     title: "Rocket Squared",
     slug: "rocket-squared",
@@ -138,7 +207,8 @@ export const portfolioinfo = [
     Class: "md:mt-24",
   },
   {
-    image: "/images/portfolio/panda-logo.png",
+    image:
+      "https://flair.ai/cdn-cgi/imagedelivery/i1XPW6iC_chU01_6tBPo8Q/60b18fb0-1656-42b1-6e9c-511259b77400/public",
     alt: "Portfolio",
     title: "Panda Logo",
     slug: "panda-logo",
@@ -146,7 +216,8 @@ export const portfolioinfo = [
     Class: "md:mt-0",
   },
   {
-    image: "/images/portfolio/humans.png",
+    image:
+      "https://flair.ai/cdn-cgi/imagedelivery/i1XPW6iC_chU01_6tBPo8Q/e7110023-d759-4c4c-a729-66c5c7fe6200/public",
     alt: "Portfolio",
     title: "Fusion Dynamics",
     slug: "fusion-dynamics",
@@ -154,7 +225,8 @@ export const portfolioinfo = [
     Class: "md:mt-0",
   },
   {
-    image: "/images/portfolio/cozycasa.png",
+    image:
+      "https://flair.ai/cdn-cgi/imagedelivery/i1XPW6iC_chU01_6tBPo8Q/ed14cadf-58ce-4f61-da43-33126de1a800/public",
     alt: "Portfolio",
     title: "InnovateX Ventures",
     slug: "innovate-x-ventures",
@@ -162,7 +234,8 @@ export const portfolioinfo = [
     Class: "md:mt-24",
   },
   {
-    image: "/images/portfolio/mars.png",
+    image:
+      "https://flair.ai/cdn-cgi/imagedelivery/i1XPW6iC_chU01_6tBPo8Q/508b2bca-e455-4e77-c2ee-10fe7c7c8600/public",
     alt: "Portfolio",
     title: "Nebula Holdings",
     slug: "nebula-holdings",
@@ -170,7 +243,8 @@ export const portfolioinfo = [
     Class: "md:mt-0",
   },
   {
-    image: "/images/portfolio/panda-logo.png",
+    image:
+      "https://flair.ai/cdn-cgi/imagedelivery/i1XPW6iC_chU01_6tBPo8Q/73bf9e36-5847-4175-636d-b588f24dd400/public",
     alt: "Portfolio",
     title: "Summit Partners",
     slug: "summit-partners",
@@ -178,7 +252,8 @@ export const portfolioinfo = [
     Class: "md:mt-24",
   },
   {
-    image: "/images/portfolio/roket-squred.png",
+    image:
+      "https://flair.ai/cdn-cgi/imagedelivery/i1XPW6iC_chU01_6tBPo8Q/f575b6d9-8d41-46dd-db9d-7b939cd90500/public",
     alt: "Portfolio",
     title: "Apex Strategies",
     slug: "apex-strategies",
